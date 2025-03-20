@@ -33,14 +33,15 @@ CREATE DATABASE db_example;
 ### 3️⃣ **Configurar o `application.properties`**
 No arquivo `src/main/resources/application.properties`, configure o acesso ao banco:
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/db_example?useSSL=false&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=1234
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
-spring.jpa.show-sql=true
+spring.application.name=UserPhoneAPI
+#Update the database schema based on the entities create-drop / update
+spring.jpa.hibernate.ddl-auto= update
+#create database if not exists mysql true spring boot
+spring.datasource.url=jdbc:mysql://localhost:3306/UserPhoneAPI?createDatabaseIfNotExist=true
+#DB User
+spring.datasource.username=USERNAME
+#DB password
+spring.datasource.password=PASSWORD
 ```
 
 ### 4️⃣ **Executar o Projeto**
