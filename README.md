@@ -168,15 +168,11 @@ mvn spring-boot:run
 
 ```json
 {
-  "name": "Herysson Atualizado",
-  "email": "herysson.novo@email.com",
+  "name": "Herysson Novo",
+  "email": "heryssonnovo@example.com",
   "phones": [
-    {
-      "number": "11111-1111"
-    },
-    {
-      "number": "22222-2222"
-    }
+    { "id": 1, "number": "00000-9999" },
+    { "id": 2, "number": "00000-8888" }
   ]
 }
 ```
@@ -185,17 +181,11 @@ mvn spring-boot:run
 ```json
 {
   "id": 1,
-  "name": "Herysson Atualizado",
-  "email": "herysson.novo@email.com",
+  "name": "Herysson Novo",
+  "email": "heryssonnovo@example.com",
   "phones": [
-    {
-      "id": 2,
-      "number": "11111-1111"
-    },
-    {
-      "id": 3,
-      "number": "22222-2222"
-    }
+    { "id": 1, "number": "00000-9999" },
+    { "id": 2, "number": "00000-8888" }
   ]
 }
 ```
