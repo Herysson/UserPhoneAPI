@@ -76,8 +76,6 @@ public class UserController {
             // Se o usuário não for encontrado, retorna erro 404
             return ResponseEntity.notFound().build();
         }
-}
-
 
 }
 
