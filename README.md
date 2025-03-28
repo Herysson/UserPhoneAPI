@@ -159,6 +159,55 @@ mvn spring-boot:run
 
 ---
 
+
+### 🔹 **5. Atualizar Usuário 
+
+📌 **PUT** `/users/{id}`
+
+📥 **Exemplo de Corpo (JSON)**
+
+```json
+{
+  "name": "Herysson Atualizado",
+  "email": "herysson.novo@email.com",
+  "phones": [
+    {
+      "number": "11111-1111"
+    },
+    {
+      "number": "22222-2222"
+    }
+  ]
+}
+```
+📤 **Resposta**
+
+```json
+{
+  "id": 1,
+  "name": "Herysson Atualizado",
+  "email": "herysson.novo@email.com",
+  "phones": [
+    {
+      "id": 2,
+      "number": "11111-1111"
+    },
+    {
+      "id": 3,
+      "number": "22222-2222"
+    }
+  ]
+}
+```
+
+📤 **Resposta de Erro (usuário não encontrado)**
+
+```http
+404 Not Found
+```
+
+---
+
 ## 📝 Considerações Finais
 Este projeto é um exemplo didático para ensino de **Spring Boot, JPA e MySQL**, abordando:
 - CRUD básico
